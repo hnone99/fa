@@ -4325,7 +4325,7 @@ html.is-scrolled .go-top { right: 20px; }
 
 .visual-swiper .item { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-size: cover; background-position: center; display: flex; align-items: center; transform: scale(1); -webkit-transition: transform 5s; transition: transform 5s; }
 
-.visual-swiper .item::after { content: ''; width: 110%; height: 110%; position: absolute; left: -5%; top: -5%; display: block; background: rgba(0, 0, 0, 0.4); }
+.visual-swiper .item::after { content: ''; width: 110%; height: 110%; position: absolute; left: -5%; top: -5%; display: block; background: rgba(0, 0, 0, 0.5); }
 
 .visual-swiper .swiper-slide-active .item { transform: scale(1.08); }
 
@@ -4507,6 +4507,24 @@ html.is-scrolled .go-top { right: 20px; }
   .main-smart .main-smart-item { margin: -4px; }
   .main-smart .main-smart-item .col-6 { padding-right: 4px; padding-left: 4px; margin: 4px 0; } }
 
+.map { width: 100% !important; height: 360px !important; position: relative; }
+
+.map .wrap_map { position: absolute; width: 100%; height: 100% !important; left: 0; top: 0; }
+
+@media (max-width: 991.98px) { .map { height: 240px !important; } }
+
+.contactus { text-align: center; }
+
+.contactus dl { display: inline-flex; flex-wrap: wrap; align-items: center; font-size: 20px; }
+
+.contactus dl dt { flex: 0 0 40px; text-align: left; margin: 15px 0; }
+
+.contactus dl dd { flex: 1 1 calc(100% - 50px); text-align: left; margin: 15px 0; }
+
+@media (max-width: 991.98px) { .contactus dl { font-size: 14px; margin-top: 10px; }
+  .contactus dl dt { margin: 5px 0; flex: 0 0 30px; }
+  .contactus dl dd { margin: 5px 0; flex: 1 1 calc(100% - 30px); } }
+
 body.body-main .header { background: transparent; transform: translateY(0) !important; }
 
 body.body-main .header .header-top { background: transparent; }
@@ -4526,6 +4544,8 @@ body.body-main .header .util .btn-lang.active button::after { background: url(".
 body.fp-viewing-section1 .fp-tableCell { padding-top: 0; }
 
 body.fp-viewing-section3 .header, body.fp-viewing-section5 .header { background: #fff; }
+
+body.fp-viewing-section3 .header .header-top, body.fp-viewing-section5 .header .header-top { border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 body.fp-viewing-section3 .header .logo, body.fp-viewing-section5 .header .logo { color: #000; }
 
