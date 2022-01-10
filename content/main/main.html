@@ -17,14 +17,19 @@
 <link type="text/css" rel="stylesheet" href="../../resources/plugin/jquery-ui/jquery-ui.min.css" />
 <link type="text/css" rel="stylesheet" href="../../resources/plugin/fullpage/fullpage.css" />
 <link type="text/css" rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../resources/plugin/aos/aos.css" />
 <link type="text/css" rel="stylesheet" href="../../resources/css/style.css" />
 
 <!-- plugin -->
 <script type="text/javascript" src="../../resources/plugin/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="../../resources/plugin/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript"  src="../../resources/plugin/fullpage/fullpage.js"></script>
 <script type="text/javascript"  src="../../resources/plugin/swiper/js/swiper.min.js"></script>
-<script type="text/javascript"  src="../../resources/plugin/skrollr/skrollr.js"></script>
+<script type="text/javascript"  src="../../resources/plugin/aos/aos.js"></script>
+
+<!-- js -->
+<script type="text/javascript" src="../../resources/js/ui.js" defer></script>
 
 </head>
 <body class="body-main">
@@ -71,15 +76,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="visual-nav">
-					<div class="container">
-						<ul>
-							<li class="active"><a href="#firstPage/slide1"><strong>퍼스트엑씨앤씨</strong><span>FA</span></a></li>
-							<li><a href="#firstPage/slide2"><strong>디지털 뉴딜 선도기업</strong><span>DIGITAL NEWDEAL</span></a></li>
-							<li><a href="#firstPage/slide3"><strong>ICT 솔루션</strong><span>ICT SOLUTION</span></a></li>
-						</ul>
-					</div>
-				</div>
 				<div id="mouse-scroll">
 					<div class="mouse">
 						<div class="mouse-in"></div>
@@ -92,9 +88,7 @@
 			</div>
 
 			<div class="section sec2">
-				<h3 class="main-title">사업분야</h3>
-				<p class="main-desc">기업의 가치를 창좋하는 더존의 사업분야를 소개합니다.</p>
-
+				<h3 class="main-title">We</h3>
 				<ul class="main-business-line">
 					<li>
 						<dl>
@@ -159,9 +153,8 @@
 			</div>
 
 			<div class="section sec3">
-				<h3 class="main-title">지속가능경영</h3>
-				<p class="main-desc">더존은 고객의 미래가치를 높이고 함께 성장의 비전을 제시합니다.</p>
-				<div class="management-swiper">
+				<h3 class="main-title">Make it</h3>
+				<!-- div class="management-swiper">
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -213,75 +206,194 @@
                         <div class="swiper-button-next swiper-button-next-management"></div>
 						<div class="swiper-pagination swiper-pagination-management"></div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="section sec4">
-				<h3 class="main-title">미디어 & 투자정보</h3>
-				<p class="main-desc">끊임없는 도전의식과 열정으로 노력하는 더존ICT그룹의 소식을 전합니다.</p>
-				<div class="container">
-					<div class="main-stock">
-						<div class="row align-items-center">
-							<div class="col-4">
-								<div class="label">주가정보</div>
-								<div>
-									<strong>112,800</strong>
-									<i>KRW</i>
-								</div>
-							</div>
-							<div class="col-4">
-								<div>전일대비</div>
-								<div>
-									<em class="text-danger">900</em>
-									<!-- <em class="text-primary">50</em> -->
-									<i class="icon-stock-red"><span class="sr-only">상승</span></i>
-									<!-- <i class="icon-stock-blue"><span class="sr-only">하락</span></i> -->
-								</div>
-							</div>
-							<div class="col-4">
-								<div>등락률</div>
-								<div>
-									<em class="text-danger">+0.80%</em>
-									<!-- <em class="text-primary">-0.80%</em> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="main-media">
-						<ul>
-							<li>
-								<a href="#">
-									<span class="thumb"><img src="../../resources/images/img_news01.png" alt="" /></span>
-									<span class="txt">
-										<strong>보도자료</strong>
-										<span>민주당 K뉴딜위, <br>‘더존비즈온’ 방문해 데이터 댐 정책 논의</span>
-									</span>
-								</a>
+				<h3 class="main-title">Smart Communication</h3>
+				<div class="main-smart">
+					<div class="container">
+						<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" data-toggle="pill" href="#tab1" role="tab" aria-selected="true">Smart Office</a>
 							</li>
-							<li>
-								<a href="#">
-									<span class="thumb"><img src="../../resources/images/img_news02.png" alt="" /></span>
-									<span class="txt">
-										<strong>보도자료</strong>
-										<span>더존비즈온, SK텔링크 기업 고객의 ‘언택트 업무환경’ 위한 공동사업 및 마케팅 제휴 체결</span>
-									</span>
-								</a>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="pill" href="#tab2" role="tab" aria-selected="false">Unified Communication</a>
 							</li>
-							<li>
-								<a href="#">
-									<span class="thumb"><img src="../../resources/images/img_news_empty.png" alt="" /></span><!-- [dev] 이미지 없을경우 -->
-									<span class="txt">
-										<strong>보도자료</strong>
-										<span>더존비즈온, 2분기 매출 732억 원, <br>영업이익 176억 원</span>
-									</span>
-								</a>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="pill" href="#tab3" role="tab" aria-selected="false">Add-on Solution</a>
 							</li>
 						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="tab1" role="tabpanel">
+								<ul class="row main-smart-item">
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													FMC (Fixed Mobile Convergence)
+												</h4>
+												<p class="card-text">
+													통화, 조직도 연동, 채팅, 공지사항 등 <br class="d-none d-lg-block">스마트폰 App을 통한 업무 환경 제공
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													PC Softphone
+												</h4>
+												<p class="card-text">
+													재택 근무, 출장 시 PC용 SW를 통한 <br class="d-none d-lg-block">사무실 전화의 이동성 보장
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Hot Desk/Virtual Desk
+												</h4>
+												<p class="card-text">
+													본/지사간 이동 근무, 공유 사무실 환경에서 <br class="d-none d-lg-block">간단한 로그인으로 자신의 전화로 활성화
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Wi-Fi IP-Phone
+												</h4>
+												<p class="card-text">
+													IP전화기에 Wi-Fi 모듈 장착으로 <br class="d-none d-lg-block">Desktop 전화기의 이동성 향상
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="tab2" role="tabpanel">
+								<ul class="row main-smart-item">
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													No.1 Market Share in KOREA
+												</h4>
+												<p class="card-text">
+													국내 공공/군/경찰 등 주요 정부기관 등에서 <br class="d-none d-lg-block">검증된 제품과 솔루션을 제공
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Strong Security
+												</h4>
+												<p class="card-text">
+													행정기관 인터넷전화 VoIP 보안 인증(TTA Ver.4) <br class="d-none d-lg-block">DB 암호화 (ARIA/AES 검증 모듈 사용)
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Scalability
+												</h4>
+												<p class="card-text">
+													MAX 960K Channels <br>720K BHCC/Node <br>SIP 40,000 Users/Node
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Openness
+												</h4>
+												<p class="card-text">
+													국내/외 보안 기술 표준 준수: SIP. H.323, PRI... <br>표준/개방형 API: CSTA, TAPI, RESTful API…
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="tab3" role="tabpanel">
+								<ul class="row main-smart-item">
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Network Management
+												</h4>
+												<p class="card-text">
+													SNMP를 지원하는 모든 통신 장비 통합 관리, <br class="d-none d-lg-block">실시간 통합 관제 모니터링 시스템
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Voice Recording
+												</h4>
+												<p class="card-text">
+													통화내용 녹음, 저장, 관리, 모니터링, <br class="d-none d-lg-block">무조건 녹취, 선택적 녹취
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													Coloring (Call Ring-back Tone)
+												</h4>
+												<p class="card-text">
+													전화 착신 시 발신자에게 음악, 멘트 송출, <br class="d-none d-lg-block">기관/기업의 정책 홍보로 대외 이미지 향상
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-6">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">
+													ARS/IVR/VMS
+												</h4>
+												<p class="card-text">
+													전화 착신 시 음성 자동 안내 및 자동 교환, <br class="d-none d-lg-block">직원 개인별 음성 사서함 제공
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="section sec5 fp-auto-height">
+			<div class="section sec5">
+				<h3 class="main-title">CONTACT</h3>
+				<div class="container">
+					전화, 주소(맵), 팩스, 이메일 등
+				</div>
+			</div>
+
+			<div class="section sec6 fp-auto-height">
 				<div id="footer-block">
 					<!-- footer include -->
 				</div>
@@ -292,15 +404,13 @@
 </div>
 <!-- //wrap -->
 
-<!-- js -->
-<script type="text/javascript" src="../../resources/js/ui.js"></script>
 <script>
 	$(function(){
 		var fullpageApi =  $('.body-main .full').fullpage({
-			anchors: ['section1','section2','section3','section4','section5'],
+			anchors: ['section1','section2','section3','section4','section5', 'section6'],
 			navigation:true,
 			keyboardScrolling:true,
-			navigationTooltips:['퍼스트엑씨앤씨','사업분야','지속가능경영','미디어 & 투자정보','footer'],
+			navigationTooltips:['퍼스트엑씨앤씨','We','Make it','Smart Communication','CONTACT', 'footer'],
 			afterRender: function () {
 
 			},
@@ -332,30 +442,6 @@
 				type: 'bullets',
 			},
 			on: {
-				/* progress: function() {
-					var swiper = this;
-					for (var i = 0; i < swiper.slides.length; i++) {
-						var slideProgress = swiper.slides[i].progress;
-						var innerOffset = swiper.width * interleaveOffset;
-						var innerTranslate = slideProgress * innerOffset;
-						swiper.slides[i].querySelector(".item").style.transform =
-						"translate3d(" + innerTranslate + "px, 0, 0)";
-					}
-				},
-				touchStart: function() {
-					var swiper = this;
-					for (var i = 0; i < swiper.slides.length; i++) {
-						swiper.slides[i].style.transition = "";
-					}
-				},
-				setTransition: function(speed) {
-					var swiper = this;
-					for (var i = 0; i < swiper.slides.length; i++) {
-						swiper.slides[i].style.transition = speed + "ms";
-						swiper.slides[i].querySelector(".item").style.transition =
-						speed + "ms";
-					}
-				}, */
 				init: function () {
 					setTimeout(function(){
 						$('.swiper-pagination').find('.swiper-pagination-bullet-active').addClass('active');
@@ -366,8 +452,6 @@
 					var idx = $('.visual-swiper .swiper-slide-active').attr('data-swiper-slide-index');
 					$('.swiper-pagination-bullet').removeClass('active');
 					$('.swiper-pagination-bullet-active').addClass('active');
-					$('.visual-nav li').removeClass('active');
-					$('.visual-nav li').eq(idx).addClass('active');
 					$('.intro').removeClass('active');
 					$('.intro').eq(idx).addClass('active');
 				},
@@ -376,12 +460,6 @@
 				}
 			}
 		});
-		$('.visual-nav a').on('click',function(e,i){
-			e.preventDefault();
-            $(this).parent().siblings().removeClass('active');
-            $(this).parent().addClass('active');
-            swiperVisual.slideTo($(this).parent().index());
-        });
 
 		var swiperManagement = new Swiper('.management-swiper .swiper-container', {
 			loop: true,

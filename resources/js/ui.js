@@ -64,10 +64,6 @@ var Init = {
 
 var Header = {
 	init : function(){
-		/* 201116 수정 */
-		this.gnb();
-		this.lang();
-		this.sitemap();
         this.scrolling();
 		window.addEventListener('mousewheel', Header.scrolling);
 		window.addEventListener('touchmove', Header.scrolling);
@@ -92,56 +88,7 @@ var Header = {
 		}else{
 			$('html').removeClass('header-hidden');
 		}
-
-		if($('.tab').length > 0){
-			if(scrollTop > $('.tab').offset().top + 70){
-				$('html').addClass('depth2-show');
-			}else{
-				$('html').removeClass('depth2-show');
-			}
-		}
 	},
-	/* 201116 추가 */
-	gnb : function(e){
-		$('.gnb > ul > li > a').on('mouseenter focus',function(){
-			$(this).closest('li').siblings().find('.gnb-sub-group').hide();
-			$(this).next('.gnb-sub').fadeIn(0);
-			$(this).next('.gnb-sub').find('.gnb-sub-group').fadeIn(150);
-		});
-		$('.gnb').on('mouseleave',function(){
-			$(this).find('.gnb-sub').fadeOut(150);
-			$(this).find('.gnb-sub-group').fadeOut(150);
-		});
-		$('.gnb > ul > li:last-child .depth2 li:last-child').on('focusout',function(){
-			$(this).find('.gnb-sub').fadeOut(150);
-			$(this).find('.gnb-sub-group').fadeOut(150);
-		});
-	},
-	lang: function(e){
-		$('.btn-lang button').on('mouseenter focus',function(){
-			$('.btn-lang').addClass('active');
-		});
-		$('.btn-lang').on('mouseleave',function(){
-			$('.btn-lang').removeClass('active');
-		});
-		$('.lang li:last-child').on('focusout',function(){
-			$('.btn-lang').removeClass('active');
-		});
-	},
-	sitemap: function(e){
-		$('.gnb .gnb-sub').each(function(){
-			$('.sitemap-body').append($(this).html());
-		});
-		$('.all').on('click',function(e){
-			e.preventDefault();
-			$('html').addClass('sitemap-open');
-		});
-		$('.sitemap .close').on('click',function(){
-			$('.sitemap-body').scrollTop(0);
-			$('html').removeClass('sitemap-open');
-		});
-	}
-	/* //201116 수정 */
 };
 
 var Common = {
@@ -164,40 +111,6 @@ var Common = {
 				}
 			});
 		});
-		//counter animation
-		var countFlag = false;
-		$(window).scroll(function () {
-			$('.count').not('.finish').each(function() {
-				if (($(window).scrollTop() + $(window).height()) - ($(window).height() / 3) > $(this).offset().top) {
-					var $this = $(this),
-						countTo = $this.attr('data-count');
-					$this.addClass('finish');
-					$({
-						countNum: $this.text()
-					}).stop().animate({
-							countNum: countTo
-						},
-						{
-							duration: 1500,
-							easing: 'linear',
-							step: function() {
-								$this.text(commaSeparateNumber(Math.floor(this.countNum)));
-							},
-							complete: function() {
-								$this.text(commaSeparateNumber(this.countNum));
-								//$this.addClass('finish');
-							}
-						}
-					);
-				};
-				function commaSeparateNumber(val) {
-					while (/(\d+)(\d{3})/.test(val.toString())) {
-						val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-					}
-					return val;
-				}
-			});
-		});
     },
 };
 
@@ -212,9 +125,6 @@ $(function() {
 		Common.init();
 		Header.init();
 
-		$('select').selectmenu();
-
-		skrollr.init();
 	//});
 
 });
