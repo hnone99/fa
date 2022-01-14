@@ -3855,7 +3855,7 @@ body { overflow-x: hidden; }
 
 .header { position: fixed; top: 0; left: 0; z-index: 999; width: 100%; -webkit-transition: all .4s; transition: all .4s; background: #fff; }
 
-.header .header-top { position: relative; border-bottom: 1px solid rgba(255, 255, 255, 0.2); background: #fff; min-width: 1230px; }
+.header .header-top { position: relative; border-bottom: 1px solid rgba(255, 255, 255, 0.2); background: #fff; }
 
 body:not(.body-main) .header .header-top { border-bottom: 0; }
 
