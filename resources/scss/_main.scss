@@ -283,7 +283,6 @@
 }
 
 .contactus{
-    text-align: center;
     dl{
         display: inline-flex;flex-wrap: wrap;align-items: center;font-size: 20px;
         dt{flex: 0 0 40px;text-align: left;margin: 15px 0;}
@@ -302,7 +301,7 @@ body.body-main{
     .header{
         background:transparent;transform: translateY(0) !important;
         .header-top{background: transparent;}
-        .logo .icon-logo{background-image:url('../images/lg-douzone-white.svg');}
+        .logo .icon-logo{background-image:url('../images/logo-white.svg');}
         .gnb > ul > li > a{color:#fff}
         .util .btn-solution a{background:#fff;color:#000}
         .util .btn-lang button{border-color:#fff;color:#fff}
@@ -320,7 +319,7 @@ body.fp-viewing-section5{
         background:#fff;
         .header-top{border-bottom: 1px solid rgba(0,0,0,0.15);}
         .logo{color: #000;}
-        .logo .icon-logo{background-image:url('../images/lg-douzone-color.svg');}
+        .logo .icon-logo{background-image:url('../images/logo.svg');}
         .gnb > ul > li > a{color:#000}
         .util .btn-lang button{border-color:#000;color:#000}
         .util .btn-lang button::after{background:url('../images/ic_dropdown_arr_down.png') no-repeat 50% 50%;}
