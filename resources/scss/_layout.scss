@@ -16,7 +16,7 @@ $sitemap-z-index: 1000;
     position:fixed;top:0;left:0;z-index: $header-z-index;width:100%;;-webkit-transition:all .4s;transition:all .4s;background:#fff;
 
     .header-top{
-        position: relative;border-bottom: 1px solid rgba(255, 255, 255, 0.2);background: #fff;min-width: 1230px;
+        position: relative;border-bottom: 1px solid rgba(255, 255, 255, 0.2);background: #fff;
         body:not(.body-main) &{border-bottom: 0;}
         @include media-breakpoint-down(md) {
             min-width: 0;height: 60px;
@@ -24,10 +24,13 @@ $sitemap-z-index: 1000;
     }
     .logo{
         position: absolute;left: 40px;top: 50%;transform: translateY(-50%);font-size: 1.5rem;color: #fff;
-        .icon-logo{display:block;background-image: url('../images/lg-douzone-color.svg');width: 150px;height: 24px;}
+        .icon-logo{display:block;background-image: url('../images/logo.svg');width: 222px;height: 37px;background-size: contain;}
     }
     @include media-breakpoint-down(md) {
-        .logo{left: 50%;font-size: 1.25rem;transform: translate(-50%,-50%);}
+        .logo{
+            left: 50%;font-size: 1.25rem;transform: translate(-50%,-50%);
+            .icon-logo{width: 160px;height: 27px;}
+        }
     }
 }
 
@@ -121,6 +124,10 @@ html.is-scroll-up {
         .footer-bottom{
             padding: 15px;
             .d-flex{flex-wrap: wrap;}
+        }
+        .footer-logo{
+            margin-bottom: 15px;
+            img{width: 85px;margin-top: 10px;}
         }
         .footer-info{font-size: 11px;
             span{
